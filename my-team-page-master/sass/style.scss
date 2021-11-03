@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    max-width: 1100px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+.l-heading {
+    font-family:  'PT Serif', serif;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 25px;
+}
+
+.s-heading {
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+
+
+/* Header section */
+header {
+    padding: 100px 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.intro{
+    width: 100%;
+}
+
+/* Main section.. team images */
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3px;
+    place-items: center;
+
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 1fr 3px;
+    width: 250px;
+    margin-bottom: 100px;
+}
+
+.calling {
+    font-family: 'PT Serif', serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    writing-mode: vertical-rl;
+    margin: 0 30px;
+}
+
+.name {
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+
+/* Footer */
+footer {
+    color: lightslategrey;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 500px){
+    header {
+        grid-template-columns: 1fr;
+        
+    }
+
+    .intro {
+       width: 70%;
+    }
+
+    .l-heading {
+        font-size: 2rem;
+    }
+    main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1px;
+    }
+
+    .card {
+        width: 150px;
+    }
+}
